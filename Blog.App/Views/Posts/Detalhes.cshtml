@@ -1,0 +1,248 @@
+﻿@model Blog.App.ViewModels.PostViewModel
+@{
+    ViewData["Title"] = "Detalhes do post";
+}
+
+
+@Html.Hidden("id")
+<div class="row">
+    <div class="col-sm-4 col-md-3">
+        <div class="standard-box">
+            <div class="article-item-image">
+                <div class="standard-article-image">
+                    <span class="standard-article-date date-full">
+                        <span class="month">@Html.DisplayFor(modelItem => Model.CriadoEm)</span>
+                    </span>
+                    <span class="standard-author"><i class="fa fa-user"></i> <strong>@Html.DisplayFor(modelItem => Model.Email)</strong></span>
+                    <img class="img-responsive" src="~/imagens/@Model.Imagem" alt="@Model.Imagem">
+                    <span class="rating">
+                        <span class="star positive">
+                            <span class="glyphicon glyphicon-star"></span>
+                        </span>
+                        <span class="star positive">
+                            <span class="glyphicon glyphicon-star"></span>
+                        </span>
+                        <span class="star positive">
+                            <span class="glyphicon glyphicon-star"></span>
+                        </span>
+                        <span class="star negative">
+                            <span class="glyphicon glyphicon-star"></span>
+                        </span>
+                        <span class="star negative">
+                            <span class="glyphicon glyphicon-star"></span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="standard-box">
+            <h2 class="standard-header">
+                <span class="text">Tags</span>
+            </h2>
+            <ul class="list-inline tags-list">
+                <li><a class="tag" href="#"><i class="fa fa-tag"></i>hardware</a></li>
+                <li><a class="tag" href="#"><i class="fa fa-tag"></i>games</a></li>
+                <li><a class="tag" href="#"><i class="fa fa-tag"></i>jogos</a></li>
+                <li><a class="tag" href="#"><i class="fa fa-tag"></i>acessórios</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-sm-8 col-md-9">
+        <div class="standard-box">
+            <div class="row">
+                <div class="col-sm-8 col-md-9">
+                    <h1 class="item-heading">
+                        @Html.DisplayFor(model => model.Titulo) <sup class="item-number">Commentários: @ViewBag.Qtde</sup>
+                    </h1>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <button data-repeater-create type="button" class="btn btn-success btn-icon ml-2 mb-2" id="btn_incluir" data-toggle="modal" data-target="#demoModal">Comentar</button>
+                </div>
+            </div>
+            <div class="standard-text">
+                <p>
+                    @Html.DisplayFor(model => model.Corpo)
+                </p>
+                <div class="article-toolbar">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="article-toolbar-info">
+                                <span class="info-item">
+                                    <i class="fa fa-user"></i> <strong>@Html.DisplayFor(model => model.Email)</strong>
+                                </span>
+                                <span class="info-item">
+                                    <i class="fa fa-calendar"></i>  @Html.DisplayFor(model => model.CriadoEm)
+                                </span>
+                                <span class="info-item" id="id-post">
+                                    @Html.DisplayFor(model => model.Id)
+                                </span>
+                                <span class="info-item">
+                                    <i class="fa fa-eye"></i> 2689 Visualizaçoes
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="list-inline text-center">
+                                <li>
+                                    <a href="#"><span class="icon-circle"><i class="fa fa-facebook"></i></span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="icon-circle"><i class="fa fa-twitter"></i></span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="icon-circle"><i class="fa fa-google-plus"></i></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <partial name="_PostarComentario" />
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="demoModal" tabindex="-1" role="dialog" aria-labelledby="demoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 class="modal-title">Comentar Post</h3>
+                </div>
+                <div class="modal-body">                    
+                    <blockquote>
+                        Seu comentário é importante para nós.
+                    </blockquote>
+                    
+                    <p>
+                        <textarea class="form-control" id="corpo" placeholder="Digite seu comentário..."></textarea>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn standard-hover-effect bg-yellow" data-dismiss="modal">
+                        <span class="text">Cancelar</span>
+                    </button>
+                    <button type="button" class="btn standard-hover-effect bg-red" id="btn_confirmar">
+                        <span class="text">Enviar</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/site.js"></script>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+<script type="text/javascript">
+        var url_confirmar = '@Url.Action("Create", "Comentarios")';
+        var url_obterPostPorId = '@Url.Action("RecuperarPost", "Posts")';
+
+        function Validate() {
+            if ($("#corpo").val() == 0) {
+                alert("Preencha o corpo do comentario");
+                return false;
+            }
+        }
+        
+        function abrir_form(dados) {
+            set_dados_form(dados);
+
+            $('#msg_mensagem_aviso').empty();
+            $('#msg_aviso').hide();
+            $('#msg_mensagem_aviso').hide();
+            $('#msg_erro').hide();
+            $('#demoModal').modal('show');
+        }
+
+        function set_dados_form(dados) {
+            $('#id').val(dados.Id);
+            $('#corpo').val(dados.Corpo);
+        }
+
+        function get_dados_form() {
+            return {
+                Id: $('#id-post').text(),
+                Corpo: $('#corpo').val()                
+            };
+        }
+
+        function get_dados_inclusao() {
+            return {
+                Id: 0,
+                Corpo: ''
+            };
+        }
+
+        function formatar_mensagem_aviso(mensagens) {
+            var result =
+                '<ul>' +
+                    '<li>' + mensagens + '</li> ' +
+                '</ul>'
+            return result;
+        }
+
+        function salvar_erro() {
+            alert('Aviso', 'Não foi possível salvar. Tente novamente em instantes.');
+        }
+
+        function salvar(response, param) {            
+            if (response.resultado == "OK") {
+                window.location.reload();                
+                $('#demoModal').modal('hide');
+            }
+            else if (response.Resultado == "ERRO") {
+                $('#msg_aviso').hide();
+                $('#msg_mensagem_aviso').hide();
+                $('#msg_erro').show();
+            }
+            else if (response.Resultado == "AVISO") {
+                $('#msg_mensagem_aviso').html(formatar_mensagem_aviso(response.Mensagens));
+                $('#msg_aviso').show();
+                $('#msg_mensagem_aviso').show();
+                $('#msg_erro').hide();
+            }
+        }
+
+        $(document).on('click', '#btn_incluir', function () {
+            var btn = $(this),
+                id = $('#id-post').text();
+                url = url_obterPostPorId,
+                param = { 'id': id };
+
+            $.post(url, param, function (response) {
+                if (response) {
+                    abrir_form(response);
+                }
+            })
+        })
+        .on('click', '#btn_confirmar', function () {
+            debugger;
+            if ($("#corpo").val() == "") {
+                alert("Preencha o corpo do comentario");
+                return false;
+            } else {
+                debugger;
+                var btn = $(this),
+                    url = url_confirmar,
+                    param = get_dados_form();
+
+                $.post(url, param, function (response) {
+                    salvar(response, param);
+                })
+                .fail(function (data, textStatus, xhr) {
+                    if (data.status == 401) {
+                        window.location.href = "/Identity/Account/Login";
+                    }
+                    //console.log("error", data.status);
+                    //console.log("STATUS: " + xhr);
+                    //salvar_erro();
+                });
+            }    
+        });
+</script>
+}

@@ -1,0 +1,117 @@
+﻿@model IEnumerable<Blog.App.ViewModels.PostViewModel>
+
+<div class="row">
+    <div class="col-md-12 col-sm-6 col-xs-12">
+        <div class="standard-box">
+            <h2 class="standard-header">
+                <span class="text">Top post</span>
+            </h2>  
+            @{ 
+                var cont = 0;               
+            }
+            @foreach (var item in ViewBag.Top5)
+            {
+                cont = cont + 1;
+                <div class="standard-article-item top-list-item">                    
+                    <h3 class="standard-article-header">@item.Titulo</h3> 
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            <span class="text">@item.Contador  comentário (s)</span>
+                        </div>
+                    </div>
+                    <p class="color-green"><small><i class="fa fa-arrow-up"></i> @cont </small></p>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="col-md-12 col-sm-6 col-xs-12">
+        <div class="standard-box">
+            <h2 class="standard-header">
+                <span class="text">Eventos</span>
+            </h2>
+            <div class="standard-article-item event">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a class="standard-article-image" href="event-item.html">
+                            <span class="event-status bg-red"></span>
+                            <img class="img-responsive" src="~/layout/img/photos/concert-4-L.jpg" alt="photo by Venttu">
+                        </a>
+                    </div>
+                    <div class="col-xs-8">
+                        <h3 class="standard-article-header"><a href="event-item.html">Opeth</a></h3>
+                        <p><i class="fa fa-calendar"></i> Feb 16 <i class="fa fa-clock-o"></i> 20:00</p>
+                        <p><i class="fa fa-bank"></i> Warsaw, Progresja Club</p>
+                        <p class="no-margin"><a href="event-item.html">Read more &raquo;</a></p>
+                    </div>
+                    <div class="col-xs-12">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="standard-article-item event">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a class="standard-article-image" href="event-item.html">
+                            <span class="event-status bg-red"></span>
+                            <img class="img-responsive" src="~/layout/img/photos/concert-1-L.jpg" alt="photo by Martin Fisch">
+                        </a>
+                    </div>
+                    <div class="col-xs-8">
+                        <h3 class="standard-article-header"><a href="event-item.html">Porcupine Tree <span class="label label-danger">Sold</span></a></h3>
+                        <p><i class="fa fa-calendar"></i> Feb 28 <i class="fa fa-clock-o"></i> 20:00</p>
+                        <p><i class="fa fa-bank"></i> Cracow, Klub Studio</p>
+                        <p class="no-margin"><a href="event-item.html">Read more &raquo;</a></p>
+                    </div>
+                    <div class="col-xs-12">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="standard-article-item event">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a class="standard-article-image" href="event-item.html">
+                            <span class="event-status bg-yellow"></span>
+                            <img class="img-responsive" src="~/layout/img/photos/concert-6-L.jpg" alt="photo by Martin Fisch">
+                        </a>
+                    </div>
+                    <div class="col-xs-8">
+                        <h3 class="standard-article-header"><a href="event-item.html">Pain Of Salvation</a></h3>
+                        <p><i class="fa fa-calendar"></i> Mar 10 <i class="fa fa-clock-o"></i> 20:00</p>
+                        <p><i class="fa fa-bank"></i> Cracow, Klub Kwadrat</p>
+                        <p class="no-margin"><a href="event-item.html">Read more &raquo;</a></p>
+                    </div>
+                    <div class="col-xs-12">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="standard-article-item event">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <a class="standard-article-image" href="event-item.html">
+                            <span class="event-status bg-green-2"></span>
+                            <img class="img-responsive" src="~/layout/img/photos/concert-8-L.jpg" alt="photo by Justin M. Martinez">
+                        </a>
+                    </div>
+                    <div class="col-xs-8">
+                        <h3 class="standard-article-header"><a href="event-item.html">Sting &amp; Paul Simon</a></h3>
+                        <p><i class="fa fa-calendar"></i> Mar 27 <i class="fa fa-clock-o"></i> 20:00</p>
+                        <p><i class="fa fa-bank"></i> Cracow, Klub Kwadrat</p>
+                        <p class="no-margin"><a href="event-item.html">Read more &raquo;</a></p>
+                    </div>
+                    <div class="col-xs-12">
+                        <hr class="no-border">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6">
+                    <a class="btn standard-hover-effect bg-red btn-block" href="events-list.html">
+                        <span class="text">More <i class="fa fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

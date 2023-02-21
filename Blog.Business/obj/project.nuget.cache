@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "RQq5taS7gz7wPbuKZ1oobNPfe3OWXmDcQDBMBQ1MvSbxahS0IPdoXwvV5M4ssqZ1O0Ef/38u68+4kszqpNeWDQ==",
+  "success": true,
+  "projectFilePath": "C:\\dev\\core\\Blog\\Blog\\Blog.Business\\Blog.Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\wesle\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
+    "C:\\Users\\wesle\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512",
+    "C:\\Users\\wesle\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\wesle\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
+    "C:\\Users\\wesle\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

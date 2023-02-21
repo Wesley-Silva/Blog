@@ -1,0 +1,16 @@
+C:\dev\core\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.0\Blog.Data.deps.json
+C:\dev\core\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.0\Blog.Data.runtimeconfig.json
+C:\dev\core\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.0\Blog.Data.runtimeconfig.dev.json
+C:\dev\core\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.0\Blog.Data.dll
+C:\dev\core\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.0\Blog.Data.pdb
+C:\dev\core\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.0\Blog.Business.dll
+C:\dev\core\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.0\Blog.Business.pdb
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.0\Blog.Data.AssemblyInfoInputs.cache
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.0\Blog.Data.AssemblyInfo.cs
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.0\Blog.Data.csproj.CopyComplete
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.0\Blog.Data.dll
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.0\Blog.Data.pdb
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.0\Blog.Data.genruntimeconfig.cache
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.0\Blog.Data.csproj.CoreCompileInputs.cache
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.0\Blog.Data.csproj.AssemblyReference.cache
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.0\Blog.Data.GeneratedMSBuildEditorConfig.editorconfig

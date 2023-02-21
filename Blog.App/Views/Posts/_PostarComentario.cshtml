@@ -1,0 +1,21 @@
+@model Blog.App.ViewModels.PostViewModel
+
+<div class="comments-list">
+    <h2 class="text-heading">Comentários <strong>(@ViewBag.Qtde)</strong></h2>
+    @foreach (var item in Model.Comentarios)
+    {            
+        <div class="comment">
+            <div class="comment-info">
+                <img src="~/layout/img/avatar.jpg" alt="tadek">
+                @*<img class="img-responsive" src="~/imagens/@item.Imagem" alt="@item.Imagem">*@
+                <span class="author">Comentado por <a href="#">@item.UsuarioId</a></span>
+                <span class="date">@item.Criado</span>
+            </div>
+            <div class="comment-content">
+                <p>
+                    @item.Corpo
+                </p>
+            </div>
+        </div>
+    }       
+</div>

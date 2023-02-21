@@ -1,0 +1,41 @@
+﻿@model Blog.App.ViewModels.CategoriaViewModel
+@{
+    ViewData["Title"] = "Editar Categoria";
+}
+
+<div class="col-md-12">
+    <div class="standard-box">
+        <h1 class="standard-header">
+            <span class="text">Categoria</span>
+            <span class="btn-group">
+                <a class="btn btn-lg btn-danger tiles-view active" asp-action="Index">Voltar</a>
+            </span>
+        </h1>
+        <form class="form-horizontal form-register" role="form" asp-action="Edit">
+            <input type="hidden" asp-for="Id" />
+            <div class="form-register-header">
+                <h2 class="text-center no-margin">Editar categoria</h2>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <hr>
+                    </div>
+                </div>
+                <p class="text-center"><small>Already Signed Up? Click <a href="#">Sign In</a> to login your account.</small></p>
+            </div>
+            <div class="form-group has-feedback">
+                <label asp-for="Nome" class="col-sm-3 control-label"></label>
+                <div class="col-sm-6">
+                    <input asp-for="Nome" class="form-control" placeholder="Nome">
+                    <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-6">
+                    <button type="submit" class="btn standard-hover-effect bg-red btn-lg btn-block">
+                        <span class="text">Salvar <i class="fa fa-arrow-right"></i></span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

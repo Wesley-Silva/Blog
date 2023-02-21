@@ -1,0 +1,9 @@
+C:\dev\core\Blog\Blog\Blog.Business\bin\Release\netcoreapp3.0\Blog.Business.deps.json
+C:\dev\core\Blog\Blog\Blog.Business\bin\Release\netcoreapp3.0\Blog.Business.dll
+C:\dev\core\Blog\Blog\Blog.Business\bin\Release\netcoreapp3.0\Blog.Business.pdb
+C:\dev\core\Blog\Blog\Blog.Business\obj\Release\netcoreapp3.0\Blog.Business.csprojAssemblyReference.cache
+C:\dev\core\Blog\Blog\Blog.Business\obj\Release\netcoreapp3.0\Blog.Business.AssemblyInfoInputs.cache
+C:\dev\core\Blog\Blog\Blog.Business\obj\Release\netcoreapp3.0\Blog.Business.AssemblyInfo.cs
+C:\dev\core\Blog\Blog\Blog.Business\obj\Release\netcoreapp3.0\Blog.Business.csproj.CoreCompileInputs.cache
+C:\dev\core\Blog\Blog\Blog.Business\obj\Release\netcoreapp3.0\Blog.Business.dll
+C:\dev\core\Blog\Blog\Blog.Business\obj\Release\netcoreapp3.0\Blog.Business.pdb

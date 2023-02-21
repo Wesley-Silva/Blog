@@ -1,0 +1,174 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>32302e91-8212-4215-aa20-bf51630b9fae</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\layout\404.html" />
+    <None Include="wwwroot\layout\blog-item.html" />
+    <None Include="wwwroot\layout\blog-list.html" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\css\bootstrap-theme.css" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\css\bootstrap-theme.css.map" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\css\bootstrap-theme.min.css" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\css\bootstrap-theme.min.css.map" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\css\bootstrap.css" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\css\bootstrap.min.css" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\js\bootstrap.js" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\layout\bootstrap-3.3.6-dist\js\npm.js" />
+    <None Include="wwwroot\layout\css\font-awesome.css" />
+    <None Include="wwwroot\layout\css\font-awesome.min.css" />
+    <None Include="wwwroot\layout\css\styles.css" />
+    <None Include="wwwroot\layout\css\styles.min.css" />
+    <None Include="wwwroot\layout\documentation\Documentation.txt" />
+    <None Include="wwwroot\layout\event-item.html" />
+    <None Include="wwwroot\layout\events-list.html" />
+    <None Include="wwwroot\layout\faq.html" />
+    <None Include="wwwroot\layout\features.html" />
+    <None Include="wwwroot\layout\fonts\BebasNeue-webfont.eot" />
+    <None Include="wwwroot\layout\fonts\BebasNeue-webfont.svg" />
+    <None Include="wwwroot\layout\fonts\BebasNeue-webfont.ttf" />
+    <None Include="wwwroot\layout\fonts\BebasNeue-webfont.woff" />
+    <None Include="wwwroot\layout\fonts\fontawesome-webfont.eot" />
+    <None Include="wwwroot\layout\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\layout\fonts\fontawesome-webfont.ttf" />
+    <None Include="wwwroot\layout\fonts\fontawesome-webfont.woff" />
+    <None Include="wwwroot\layout\fonts\FontAwesome.otf" />
+    <None Include="wwwroot\layout\gallery.html" />
+    <None Include="wwwroot\layout\img\artists\marillion-XL.jpg" />
+    <None Include="wwwroot\layout\img\artists\radiohead-L.jpg" />
+    <None Include="wwwroot\layout\img\avatar.jpg" />
+    <None Include="wwwroot\layout\img\background.jpg" />
+    <None Include="wwwroot\layout\img\covers\achtung-baby-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\celebration-day-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\celebration-day-S.jpg" />
+    <None Include="wwwroot\layout\img\covers\change-of-seasons-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\controlling-crowds-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\dark-side-of-the-moon-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\dark-side-of-the-moon-S.jpg" />
+    <None Include="wwwroot\layout\img\covers\deadwing-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\falling-deeper-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\fat-of-the-land-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\fat-of-the-land-S.jpg" />
+    <None Include="wwwroot\layout\img\covers\great-cold-distance-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\ok-computer-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\powerslave-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\raven-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\so-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\so-S.jpg" />
+    <None Include="wwwroot\layout\img\covers\songs-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\st-anger-L.jpg" />
+    <None Include="wwwroot\layout\img\covers\st-anger-S.jpg" />
+    <None Include="wwwroot\layout\img\hex_shape.png" />
+    <None Include="wwwroot\layout\img\logo.png" />
+    <None Include="wwwroot\layout\img\people\man-1.jpg" />
+    <None Include="wwwroot\layout\img\people\man-2.jpg" />
+    <None Include="wwwroot\layout\img\people\man-3.jpg" />
+    <None Include="wwwroot\layout\img\people\woman-3.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-1-L.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-1-XL.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-1.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-2-blog.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-2-L.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-2-XL.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-2.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-3-blog.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-3-L.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-3-XL.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-3.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-4-L.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-4.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-5-blog.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-5-L.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-5.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-6-blog.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-6-L.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-6-XL.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-6.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-7-L.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-7.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-8-L.jpg" />
+    <None Include="wwwroot\layout\img\photos\concert-8.jpg" />
+    <None Include="wwwroot\layout\img\photos\lights-1-blog.jpg" />
+    <None Include="wwwroot\layout\img\photos\lights-1-L.jpg" />
+    <None Include="wwwroot\layout\img\photos\lights-1.jpg" />
+    <None Include="wwwroot\layout\img\photos\ticket-1.jpg" />
+    <None Include="wwwroot\layout\img\slider-photos\concert-1.jpg" />
+    <None Include="wwwroot\layout\img\slider-photos\concert-2.jpg" />
+    <None Include="wwwroot\layout\img\slider-photos\concert-3.jpg" />
+    <None Include="wwwroot\layout\img\slider-photos\slogan-background.jpg" />
+    <None Include="wwwroot\layout\img\src\background.jpg" />
+    <None Include="wwwroot\layout\index.html" />
+    <None Include="wwwroot\layout\info.html" />
+    <None Include="wwwroot\layout\js\custom.js" />
+    <None Include="wwwroot\layout\js\custom.min.js" />
+    <None Include="wwwroot\layout\js\jquery-scrollto-min.js" />
+    <None Include="wwwroot\layout\js\jquery-scrollto.js" />
+    <None Include="wwwroot\layout\js\jquery.1.11.0.js" />
+    <None Include="wwwroot\layout\js\jquery.1.11.0.min.js" />
+    <None Include="wwwroot\layout\js\jquery.cookie.js" />
+    <None Include="wwwroot\layout\js\jquery.cookie.min.js" />
+    <None Include="wwwroot\layout\js\jquery.shuffle.js" />
+    <None Include="wwwroot\layout\js\jquery.shuffle.min.js" />
+    <None Include="wwwroot\layout\js\jquery.shuffle.modernizr.js" />
+    <None Include="wwwroot\layout\js\jquery.shuffle.modernizr.min.js" />
+    <None Include="wwwroot\layout\js\masonry.pkgd.js" />
+    <None Include="wwwroot\layout\js\masonry.pkgd.min.js" />
+    <None Include="wwwroot\layout\js\modernizr.custom.js" />
+    <None Include="wwwroot\layout\js\modernizr.custom.min.js" />
+    <None Include="wwwroot\layout\js\respond.min.js" />
+    <None Include="wwwroot\layout\js\respond.src.js" />
+    <None Include="wwwroot\layout\lightbox\css\lightbox.css" />
+    <None Include="wwwroot\layout\lightbox\css\lightbox.min.css" />
+    <None Include="wwwroot\layout\lightbox\css\screen.css" />
+    <None Include="wwwroot\layout\lightbox\img\close.png" />
+    <None Include="wwwroot\layout\lightbox\img\loading.gif" />
+    <None Include="wwwroot\layout\lightbox\img\next.png" />
+    <None Include="wwwroot\layout\lightbox\img\prev.png" />
+    <None Include="wwwroot\layout\lightbox\js\lightbox.js" />
+    <None Include="wwwroot\layout\lightbox\js\lightbox.min.js" />
+    <None Include="wwwroot\layout\lightbox\js\lightbox.min.map" />
+    <None Include="wwwroot\layout\lightbox\README.markdown" />
+    <None Include="wwwroot\layout\news-item.html" />
+    <None Include="wwwroot\layout\news-list.html" />
+    <None Include="wwwroot\layout\page-404.html" />
+    <None Include="wwwroot\layout\sign-in-up.html" />
+    <None Include="wwwroot\layout\thumbnail.png" />
+    <None Include="wwwroot\layout\thumbnail_2.png" />
+    <None Include="wwwroot\layout\tickets.html" />
+    <None Include="wwwroot\layout\timeline.html" />
+    <None Include="wwwroot\layout\typography.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blog.Data\Blog.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\imagens\imagens_sistema\" />
+  </ItemGroup>
+
+  
+</Project>

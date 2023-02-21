@@ -1,0 +1,13 @@
+C:\dev\core\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.1\Blog.Data.deps.json
+C:\dev\core\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.1\Blog.Data.dll
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.1\Blog.Data.csprojAssemblyReference.cache
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.1\Blog.Data.AssemblyInfoInputs.cache
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.1\Blog.Data.AssemblyInfo.cs
+C:\dev\core\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.1\Blog.Business.dll
+C:\dev\core\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.1\Blog.Data.runtimeconfig.json
+C:\dev\core\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.1\Blog.Data.runtimeconfig.dev.json
+C:\dev\core\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.1\Blog.Data.pdb
+C:\dev\core\Blog\Blog\Blog.Data\bin\Debug\netcoreapp3.1\Blog.Business.pdb
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.1\Blog.Data.csproj.CopyComplete
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.1\Blog.Data.dll
+C:\dev\core\Blog\Blog\Blog.Data\obj\Debug\netcoreapp3.1\Blog.Data.pdb

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>Equalizer</title>
+
+    <!-- Opens Sans Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap styles -->
+    <link href="bootstrap-3.3.6-dist/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" >
+
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" media="screen" rel="stylesheet" type="text/css" >
+
+    <!-- Lightbox styles -->
+    <link href="lightbox/css/lightbox.min.css" media="screen" rel="stylesheet" type="text/css" >
+
+    <!-- Custom styles -->
+    <link href="css/styles.min.css" media="screen" rel="stylesheet" type="text/css" >
+
+    <!-- Modernizr -->
+    <script type="text/javascript" src="js/modernizr.custom.min.js"></script>
+
+    <script type="text/javascript">
+
+        //checking media queries browsers support
+        Modernizr.load({
+            test: Modernizr.mq('only all'),
+            nope: 'js/respond.min.js'
+        });
+
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target="#main-menu">
+    <div class="preloader">
+        <div class="loader">
+            <div class="bar bar-1 bg-red"></div>
+            <div class="bar bar-2 bg-orange"></div>
+            <div class="bar bar-3 bg-yellow"></div>
+            <div class="bar bar-4 bg-green"></div>
+            <div class="bar bar-5 bg-green-2"></div>
+            <div class="text">Loading</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header-top">
+            <div class="row">
+                <div class="col-xs-5">
+                    <ul class="list-inline social-links">
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i><span class="equalizer-bar bg-red"></span></a>
+                        </li><li class="hidden-xs">
+                            <a href="#"><i class="fa fa-skype"></i><span class="equalizer-bar bg-red"></span></a>
+                        </li><li class="hidden-xxs">
+                            <a href="#"><i class="fa fa-linkedin"></i><span class="equalizer-bar bg-red"></span></a>
+                        </li><li class="hidden-xxs">
+                            <a href="#"><i class="fa fa-google-plus"></i><span class="equalizer-bar bg-red"></span></a>
+                        </li><li>
+                            <a href="#"><i class="fa fa-youtube-play"></i><span class="equalizer-bar bg-red"></span></a>
+                        </li><li class="hidden-xs">
+                            <a href="#"><i class="fa fa-flickr"></i><span class="equalizer-bar bg-red"></span></a>
+                        </li><li>
+                            <a href="#"><i class="fa fa-facebook"></i><span class="equalizer-bar bg-red"></span></a>
+                        </li><li class="hidden-xs">
+                            <a href="#"><i class="fa fa-pinterest"></i><span class="equalizer-bar bg-red"></span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-7">
+                    <div class="header-top-dropdown">
+                        <div class="btn-group dropdown">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                <span class="text"><i class="fa fa-search"></i> Search</span>
+                                <span class="equalizer-bar bg-red"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <form role="search" class="search-box">
+                                        <div class="form-group has-feedback no-margin">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                            <i class="fa fa-search form-control-feedback"></i>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-group dropdown">
+                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                <span class="text"><i class="fa fa-user"></i> Login</span>
+                                <span class="equalizer-bar bg-red"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li>
+                                    <form class="login-form" action="#">
+                                        <div class="form-group has-feedback">
+                                            <input type="text" class="form-control" placeholder="Username">
+                                            <i class="fa fa-user form-control-feedback"></i>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Password">
+                                            <i class="fa fa-lock form-control-feedback"></i>
+                                        </div>
+                                        <button type="submit" class="btn standard-hover-effect bg-red btn-block">
+                                            <span class="text">Log In <i class="fa fa-arrow-right"></i></span>
+                                        </button>
+                                        <h3 class="text-center">or</h3>
+                                        <button type="submit" class="btn standard-hover-effect bg-red btn-block">
+                                            <span class="text">Sign Up <i class="fa fa-arrow-right"></i></span>
+                                        </button>
+                                        <p class="text-center"><a href="#">Forgot your password?</a></p>
+                                        <h3 class="text-center margin-bottom-20">Sign in with your social account</h3>
+                                        <ul class="list-inline text-center">
+                                            <li>
+                                                <a href="#"><span class="icon-circle"><i class="fa fa-facebook"></i></span></a>
+                                            </li><li>
+                                                <a href="#"><span class="icon-circle"><i class="fa fa-twitter"></i></span></a>
+                                            </li><li>
+                                                <a href="#"><span class="icon-circle"><i class="fa fa-google-plus"></i></span></a>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="navbar navbar-inverse">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="Equalizer"> Equalizer
+                        </a>
+                    </div>
+                </div>
+                <div class="slogan hidden-xs"><i class="fa fa-quote-left"></i>What Would The World Be Like Without Music?</div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">
+                                <span class="text">Start</span>
+                                <span class="equalizer-bar bg-blue"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="info.html">
+                                <span class="text">Info</span>
+                                <span class="equalizer-bar bg-violet"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="gallery.html">
+                                <span class="text">Gallery</span>
+                                <span class="equalizer-bar bg-violet-2"></span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="text">News <b class="caret"></b></span>
+                                <span class="equalizer-bar bg-pink"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="news-list.html">
+                                        <span class="text">News list</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="news-item.html">
+                                        <span class="text">News item</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="text">Events <b class="caret"></b></span>
+                                <span class="equalizer-bar bg-red-2"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="events-list.html">
+                                        <span class="text">Events list</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="event-item.html">
+                                        <span class="text">Event item</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="text">Blog <b class="caret"></b></span>
+                                <span class="equalizer-bar bg-red"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="blog-list.html">
+                                        <span class="text">Blog list</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="blog-item.html">
+                                        <span class="text">Blog item</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="tickets.html">
+                                <span class="text">Tickets</span>
+                                <span class="equalizer-bar bg-orange"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="timeline.html">
+                                <span class="text">Timeline</span>
+                                <span class="equalizer-bar bg-yellow"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="text">Pages <b class="caret"></b></span>
+                                <span class="equalizer-bar bg-green"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="page-404.html">
+                                        <span class="text">Page 404</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">
+                                        <span class="text">Typography</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="features.html">
+                                        <span class="text">Features</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">
+                                        <span class="text">FAQ</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="sign-in-up.html">
+                                <span class="text">Sign In/Up</span>
+                                <span class="equalizer-bar bg-green-2"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="side-menu-tab">
+            <a class="expand" href="#">
+                <i class="fa fa-gear"></i>
+            </a>
+            <div class="side-menu-tab-content">
+                <h3 class="side-menu-header">Style switcher</h3>
+                <h4>Box transparency</h4>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a class="btn standard-hover-effect bg-red btn-block change-opacity" href="#" data-opacity="low">
+                            <span class="text">Low</span>
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a class="btn standard-hover-effect bg-red btn-block change-opacity active" href="#" data-opacity="high">
+                            <span class="text">High</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+                <div class="standard-box">
+                    <div class="article-item-image">
+                        <div class="standard-article-image">
+                            <span class="standard-article-date date-full">
+                                <span class="day"><span>21</span></span>
+                                <span class="month">feb</span>
+                                <span class="year">2013</span>
+                            </span>
+                            <span class="standard-author"><i class="fa fa-user"></i> <strong>kwarc</strong></span>
+                            <img class="img-responsive" src="img/covers/fat-of-the-land-L.jpg" alt="The Fat Of The Land">
+                            <span class="rating">
+                                <span class="star positive">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </span>
+                                <span class="star positive">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </span>
+                                <span class="star positive">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </span>
+                                <span class="star negative">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </span>
+                                <span class="star negative">
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="standard-box">
+                    <h2 class="standard-header">
+                        <span class="text">Panel</span>
+                    </h2>
+                    <ul class="admin-panel list-unstyled">
+                        <li class="edit">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                Edit
+                            </a>
+                        </li>
+                        <li class="user">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="photo">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-picture"></span>
+                                Photos
+                            </a>
+                        </li>
+                        <li class="add">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-film"></span>
+                                Videos
+                            </a>
+                        </li>
+                        <li class="add">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-music"></span>
+                                Albums
+                            </a>
+                        </li>
+                        <li class="add">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-trash"></span>
+                                Delete
+                            </a>
+                        </li>
+                        <li class="tool">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-cog"></span>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="standard-box">
+                    <h2 class="standard-header">
+                        <span class="text">Tags</span>
+                    </h2>
+                    <ul class="list-inline tags-list">
+                        <li><a class="tag" href="#"><i class="fa fa-tag"></i>rave</a></li>
+                        <li><a class="tag" href="#"><i class="fa fa-tag"></i>techno</a></li>
+                        <li><a class="tag" href="#"><i class="fa fa-tag"></i>rock</a></li>
+                        <li><a class="tag" href="#"><i class="fa fa-tag"></i>electronic</a></li>
+                        <li><a class="tag" href="#"><i class="fa fa-tag"></i>electro</a></li>
+                        <li><a class="tag" href="#"><i class="fa fa-tag"></i>alternative</a></li>
+                        <li><a class="tag" href="#"><i class="fa fa-tag"></i>psychodelic</a></li>
+                    </ul>
+                </div>
+                <div class="standard-box">
+                    <h2 class="standard-header">
+                        <span class="text">Tracklist</span>
+                    </h2>
+                    <ol class="list">
+                        <li>"Smack My Bitch Up" – 5:42</li>
+                        <li>"Breathe" – 5:35</li>
+                        <li>"Diesel Power" – 4:17</li>
+                        <li>"Funky Shit" – 5:16</li>
+                        <li>"Serial Thrilla" – 5:11</li>
+                        <li>"Mindfields" – 5:40</li>
+                        <li>"Narayan" – 9:05</li>
+                        <li>"Firestarter" – 4:40</li>
+                        <li>"Climbatize" – 6:38</li>
+                        <li>"Fuel My Fire" – 4:19</li>
+                    </ol>
+                </div>
+                <div class="standard-box">
+                    <h2 class="standard-header">
+                        <span class="text">Members</span>
+                    </h2>
+                    <ul class="list">
+                        <li>Keith Flint</li>
+                        <li>Liam Howlett</li>
+                        <li>Maxim Reality</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-9">
+                <div class="standard-box">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-9">
+                            <h1 class="item-heading">
+                                Prodigy - The Fat Of The Land <sup class="item-number">comments: 2</sup>
+                            </h1>
+                        </div>
+                        <div class="col-sm-4 col-md-3">
+                            <a class="btn standard-hover-effect bg-red btn-block btn-sm pull-right btn-add-review" href="#" data-scroll-to="button">
+                                <span class="text"><i class="fa fa-comment"></i> Write a comment!</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="standard-text">
+                        <p>This album is truly unique. It is very difficult to write a review of <strong>THAT</strong> album. This is something unusual from the beginning to the end. Really. I’ve already listened to many CDs in my life but this is completely different. This album is really intriguing, it has something elusive. It is both typical and not for this artist. Certainly it is an integral part of the discography of this artist. Maybe this is his most important work. It is quite possible.</p>
+                        <p>There are many different albums. Some are good, some are bad. And some are totally bland. You know, you listen to it and nothing at all stays in your memory. Complete emptiness, a form without content. Like latin “lorem ipsum” sentence. Do you know it? It goes something like this:</p>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus nisi a est mollis, at consectetur ipsum vestibulum. Sed ornare justo vel ligula pharetra pulvinar. Suspendisse tincidunt nibh id dui porta, ac cursus nunc aliquet. Proin in lectus ultricies, vehicula tellus eu, ullamcorper diam. Cras faucibus metus et sem fringilla, non mattis felis tincidunt. Nunc pharetra venenatis tellus vel feugiat. Nunc consectetur venenatis dolor, at sollicitudin lacus volutpat in. Phasellus dapibus eget ipsum sit amet tristique. Donec ac pretium mauris. Etiam vitae fringilla nulla. Sed eros purus, iaculis nec aliquet quis, egestas eget purus. Aenean vehicula tellus quis tellus euismod auctor. In hac habitasse platea dictumst. Nunc est tortor, mattis eu tempor vitae, tincidunt at lacus."</p>
+                        <p>It is only the first paragraph. Second goes:</p>
+                        <p>"Curabitur urna quam, consectetur eget elit sed, feugiat cursus ipsum. Nullam elementum ultrices magna, sed suscipit purus. Sed iaculis, lorem non convallis semper, est magna iaculis leo, sed hendrerit lorem tellus in velit. Mauris placerat bibendum nulla, eget vestibulum dui. Nullam luctus neque urna, rutrum ultricies ligula dapibus eu. Nullam placerat adipiscing hendrerit. Donec ac augue non lectus mollis euismod. Curabitur quis aliquet ligula, a elementum metus. Aliquam erat volutpat. Mauris facilisis interdum turpis, vel pellentesque ligula luctus vel. Maecenas vitae risus scelerisque, venenatis nisl sit amet, laoreet augue. Integer bibendum leo eget dui commodo mollis."</p>
+                        <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Many albums are also dummies. Do not arouse any emotion, completely nothing. But this album is totally different.</p>
+                        <p>When we listened to this album here in music-nation company we were very impressed. That work is a rarity. We know it. Already the first track proves the greatness of this artist, his genius, and that it has its own unique style. Nobody plays like him. Other songs also are brilliant. Not like lorem ipsum third paragraph, which goes:</p>
+                        <p>"Sed pretium, orci in feugiat pharetra, dui metus blandit ligula, malesuada ullamcorper sem augue a erat. Integer hendrerit rutrum ante non egestas. Pellentesque vestibulum felis purus, sit amet pellentesque enim laoreet non. Fusce cursus hendrerit ultricies. Mauris mattis scelerisque ipsum, fringilla tincidunt lacus luctus non. Curabitur lacinia ac risus et convallis. Sed commodo ipsum eget quam pellentesque, eget dapibus tellus ultricies. Sed a lectus at nisi faucibus volutpat. Nunc ac diam ligula. Aenean accumsan porta sapien at congue. Duis enim orci, luctus sed quam quis, commodo ullamcorper ipsum. Morbi ultricies ornare tempor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque venenatis leo at viverra mattis. Etiam dolor mi, porta vitae libero sed, venenatis elementum sem. Mauris laoreet, tortor id vehicula mollis, sem enim molestie ante, sit amet sodales est massa sit amet turpis."</p>
+                        <p>You enjoy listening to this album from beginning to end. Only then you will understand what we mean. We hope that you as we appreciate this album and listening to it although it takes you a while to another reality. Better reality.</p>
+                        <div class="article-toolbar">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="article-toolbar-info">
+                                        <span class="info-item">
+                                            <i class="fa fa-user"></i> <strong>kwarc</strong>
+                                        </span>
+                                        <span class="info-item">
+                                            <i class="fa fa-calendar"></i> 2012-12-15
+                                        </span>
+                                        <span class="info-item">
+                                            <i class="fa fa-eye"></i> 2689 Views
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <ul class="list-inline text-center">
+                                        <li>
+                                            <a href="#"><span class="icon-circle"><i class="fa fa-facebook"></i></span></a>
+                                        </li><li>
+                                            <a href="#"><span class="icon-circle"><i class="fa fa-twitter"></i></span></a>
+                                        </li><li>
+                                            <a href="#"><span class="icon-circle"><i class="fa fa-google-plus"></i></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="comments-list">
+                        <h2 class="text-heading">Comments <strong>(2)</strong></h2>
+                        <div class="comment">
+                            <div class="comment-info">
+                                <img src="img/avatar.jpg" alt="tadek">
+                                <span class="author">by <a href="#">tadek</a></span>
+                                <span class="date">2013-01-21</span>
+                            </div>
+                            <div class="comment-content">
+                                <p>Yes, it’s a really good album. I listened to it many times. This album is really intriguing, it has something elusive. It is both typical and not for this artist. Certainly it is an integral part of the discography of this artist. Maybe this is his most important work. It is quite possible.</p>
+                            </div>
+                        </div>
+                        <div class="comment">
+                            <div class="comment-info">
+                                <img src="img/avatar.jpg" alt="adam">
+                                <span class="author">by <a href="#">adam</a></span>
+                                <span class="date">2013-01-21</span>
+                            </div>
+                            <div class="comment-content">
+                                <p>I really enjoy listening to this album. I would recommend it to anyone who loves music. For sure you will not regret.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-comment" data-scroll-to="target">
+                        <h2 class="text-heading">Add comment:</h2>
+                        <div class="comment">
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <div class="col-md-offset-3 col-md-6">
+                                        <textarea class="form-control" id="comment" placeholder="Type your message..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <div class="col-md-offset-3 col-md-6">
+                                        <input type="text" class="form-control input-lg" id="nickname" placeholder="Your name">
+                                        <span class="glyphicon glyphicon-user form-control-feedback form-control-feedback-lg"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-offset-3 col-md-6">
+                                        <button name="submit" class="btn standard-hover-effect bg-red btn-lg btn-block">
+                                            <span class="text">Send</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="standard-box bottom-box margin-bottom-10">
+                    <h2 class="standard-header">
+                        <span class="text">Menu</span>
+                    </h2>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <ul class="list list-menu with-links">
+                                <li>
+                                    <a href="index.html">Start</a>
+                                </li>
+                                <li>
+                                    <a href="info.html">Info</a>
+                                </li>
+                                <li>
+                                    <a href="gallery.html">Gallery</a>
+                                </li>
+                                <li>
+                                    <a href="news-list.html">News list</a>
+                                </li>
+                                <li>
+                                    <a href="news-item.html">News item</a>
+                                </li>
+                                <li>
+                                    <a href="events-list.html">Events list</a>
+                                </li>
+                                <li>
+                                    <a href="event-item.html">Event item</a>
+                                </li>
+                                <li>
+                                    <a href="blog-list.html">Blog list</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6">
+                            <ul class="list list-menu with-links">
+                                <li>
+                                    <a href="blog-item.html">Blog item</a>
+                                </li>
+                                <li>
+                                    <a href="tickets.html">Tickets</a>
+                                </li>
+                                <li>
+                                    <a href="timeline.html">Timeline</a>
+                                </li>
+                                <li>
+                                    <a href="page-404.html">Page 404</a>
+                                </li>
+                                <li>
+                                    <a href="typography.html">Typography</a>
+                                </li>
+                                <li>
+                                    <a href="features.html">Features</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="sign-in-up.html">Sign In/Up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="standard-box bottom-box">
+                    <h2 class="standard-header">
+                        <span class="text">Address</span>
+                    </h2>
+                    <div class="address-box">
+                        <p class="logo"><img src="img/logo.png" alt="Equalizer"> Equalizer</p>
+                        <p><span class="glyphicon glyphicon-map-marker"></span> 1516 Woodstock Drive</p>
+                        <p><span class="glyphicon glyphicon-map-marker"></span> Los Angeles, CA 90071</p>
+                        <p><span class="glyphicon glyphicon-earphone"></span> 626-478-6373</p>
+                        <p><span class="fa fa-fax pr-10"></span> 800 123 3456 </p>
+                        <p><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:mnbootstrap@gmail.com">mnbootstrap@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="standard-box bottom-box">
+                    <h2 class="standard-header">
+                        <span class="text">Contact Us</span>
+                    </h2>
+                    <form class="form-horizontal" enctype="application/x-www-form-urlencoded" method="post" action="#">
+                        <div class="form-group has-feedback">
+                            <div class="col-sm-12">
+                                <input class="form-control" type="text" name="topic" id="topic" value="" placeholder="topic">
+                                <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <textarea class="form-control" name="message" id="message" placeholder="type your message here..."></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-6 col-sm-offset-6">
+                                <button name="submit" class="btn standard-hover-effect bg-red btn-block">
+                                    <span class="text">Send</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="standard-box bottom-box">
+                <a class="scroll-up" id="toTop" href="#">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+                <p>&copy; 2014 <a href="http://portfolio-kwarc.pl">portfolio-kwarc.pl</a></p>
+                <hr>
+                <p class="no-margin clearfix"><a class="logo pull-right" href="index.html"><img src="img/logo.png" alt="Equalizer"> Equalizer</a> <small>*Photos courtesy of and copyright Free Range Stock, <a href="http://www.freerangestock.com">www.freerangestock.com</a></small></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.1.11.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+    <!-- jQuery cookie -->
+    <script type="text/javascript" src="js/jquery.cookie.min.js"></script>
+
+    <!-- jQuery scrollTo -->
+    <script type="text/javascript" src="js/jquery-scrollto-min.js"></script>
+
+    <!-- Lightbox -->
+    <script type="text/javascript" src="lightbox/js/lightbox.min.js"></script>
+
+    <!-- Google maps -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <!-- Masonry -->
+    <script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+
+    <!-- Shuffle -->
+    <script type="text/javascript" src="js/jquery.shuffle.modernizr.min.js"></script>
+
+    <!-- Custom javascript -->
+    <script type="text/javascript" src="js/custom.min.js"></script>
+
+</body>
+</html>

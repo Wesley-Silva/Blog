@@ -1,0 +1,68 @@
+﻿@page
+@model RegisterModel
+
+<div class="col-md-12">
+    <div class="standard-box">
+        <h1 class="standard-header">
+            <span class="text">Registrar</span>
+            <span class="btn-group">
+                <a class="btn btn-lg btn-danger tiles-view active" asp-action="Index">Voltar</a>
+            </span>
+        </h1>
+        @*<form asp-route-returnUrl="@Model.ReturnUrl" method="post">*@
+        <form class="form-horizontal form-register" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <div class="form-register-header">
+                <h2 class="text-center no-margin">Digite as credenciais abaixo</h2>
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <hr>
+                    </div>
+                </div>
+                @*<p class="text-center"><small>Already Signed Up? Click <a href="#">Sign In</a> to login your account.</small></p>*@
+
+                @*<div asp-validation-summary="All" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>*@
+
+                @*Em vez de eu escrever 'All ou ModelOnly' eu creio um viecomponent q mostra os dois tanto da view quanto do backend*@
+                @*isso é um ViewComponent - vc significa viewcomponet e Sumary é o nome do component*@
+                <vc:Summary></vc:Summary>
+            </div>
+            @*<div asp-validation-summary="All" class="text-danger"></div>*@
+            <div class="form-group has-feedback">
+                <label class="col-sm-3 control-label">Email</label>
+                <div class="col-sm-6">
+                    <input asp-for="Input.Email" class="form-control" placeholder="Email">
+                    <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label class="col-sm-3 control-label">Senha</label>
+                <div class="col-sm-6">
+                    <input asp-for="Input.Password" class="form-control" placeholder="Senha">
+                    <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group has-feedback">
+                <label class="col-sm-3 control-label">Confirmar senha</label>
+                <div class="col-sm-6">
+                    <input asp-for="Input.ConfirmPassword" class="form-control" placeholder="Confirmar senha">
+                    <span class="glyphicon glyphicon-pencil form-control-feedback"></span>
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+           
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-6">
+                    <button type="submit" class="btn standard-hover-effect bg-red btn-lg btn-block">
+                        <span class="text">Registrar <i class="fa fa-arrow-right"></i></span>
+                    </button>
+                </div>
+            </div>            
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

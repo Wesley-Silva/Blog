@@ -1,0 +1,248 @@
+﻿@model Blog.App.ViewModels.CategoriaViewModel
+
+@{
+    ViewData["Title"] = "Detalhes da Categoria";
+}
+
+<div class="col-md-8">
+    <div class="standard-box">
+        <h2 class="standard-header margin-top-10">
+            <span class="text">Detalhes da categoria</span>
+            <span class="btn-group">
+                <a class="btn btn-lg btn-danger tiles-view active" asp-action="Index">Voltar</a>
+            </span>
+        </h2>
+        <div class="standard-text">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.Id)</th>
+                        <th>@Html.DisplayNameFor(model => model.Nome)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>@Html.DisplayFor(model => model.Id)</td>
+                        <td>@Html.DisplayFor(model => model.Nome)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="standard-box">
+        <h3 class="standard-header">
+            <span class="text">FAQ</span>
+        </h3>
+        <div class="panel-group" id="accordion">
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            <span class="event-status bg-red"></span>
+                            What is Equalizer?
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            <span class="event-status bg-red"></span>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                            <span class="event-status bg-yellow"></span>
+                            Maecenas quis orci sagittis, aliquam neque et, dictum justo?
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                            <span class="event-status bg-yellow"></span>
+                            Brunch 3 wolf moon tempor
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                            <span class="event-status bg-green"></span>
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson?
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                        <br><br>
+                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                            <span class="event-status bg-green"></span>
+                            Leggings occaecat craft beer farm-to-table?
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                        <br><br>
+                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                            <span class="event-status bg-green"></span>
+                            Ad vegan excepteur butcher vice lomo?
+                        </a>
+                    </h3>
+                </div>
+                <div id="collapseSeven" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Leggings occaecat craft beer farm-to-table.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-6">
+                <a class="btn standard-hover-effect bg-red btn-block" href="#">
+                    <span class="text">More <i class="fa fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="standard-box">
+        <h2 class="standard-header">
+            <span class="text">Our Team</span>
+        </h2>
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="user-box margin-bottom-20">
+                    <div class="avatar">
+                        <img class="img-responsive" src="~/layout/img/people/man-2.jpg" alt="Man">
+                        <div class="additional-info-box">
+                            <div class="additional-info-box-content">
+                                <i class="fa fa-envelope"></i>
+                                <p>peterhook@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="heading">Peter Hook</h3>
+                    <p class="subheading"><small>CEO and Founder</small></p>
+                    <ul class="social-icons list-inline">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat.</p>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="user-box margin-bottom-20">
+                    <div class="avatar">
+                        <img class="img-responsive" src="~/layout/img/people/man-1.jpg" alt="Man">
+                        <div class="additional-info-box">
+                            <div class="additional-info-box-content">
+                                <i class="fa fa-envelope"></i>
+                                <p>johndeacon@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="heading">John Deacon</h3>
+                    <p class="subheading"><small>Creative Director</small></p>
+                    <ul class="social-icons list-inline">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat.</p>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="user-box margin-bottom-0-xs">
+                    <div class="avatar">
+                        <img class="img-responsive" src="~/layout/img/people/man-3.jpg" alt="Man">
+                        <div class="additional-info-box">
+                            <div class="additional-info-box-content">
+                                <i class="fa fa-envelope"></i>
+                                <p>stevenwilson@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="heading">Steven Wilson</h3>
+                    <p class="subheading"><small>Sales Manager</small></p>
+                    <ul class="social-icons list-inline">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat.</p>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="user-box margin-bottom-0-xs">
+                    <div class="avatar">
+                        <img class="img-responsive" src="~/layout/img/people/woman-3.jpg" alt="Woman">
+                        <div class="additional-info-box">
+                            <div class="additional-info-box-content">
+                                <i class="fa fa-envelope"></i>
+                                <p>cristinaadams@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="heading">Cristina Adams</h3>
+                    <p class="subheading"><small>Sales Manager</small></p>
+                    <ul class="social-icons list-inline">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
